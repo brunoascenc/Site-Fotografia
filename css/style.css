@@ -1,0 +1,397 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+body {
+	font-family: sans-serif;
+	background-color: #f8f5f5 !important;
+}
+
+.container img {
+	width: 100% !important;
+}
+
+
+/* Header */
+header {
+	display: flex;
+	height: 100vh;
+}
+
+.nav {
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.nav a {
+	color: #141313;
+}
+
+.nav a:hover {
+	border-bottom: solid 2px #141313;
+	color: #141313;
+	transition: all 0.6 ease !important;
+}
+
+#landing-text {
+	margin-top: 20%;
+	margin-left: 25% !important;
+	font-family: 'Inconsolata', monospace;
+	text-transform: uppercase;
+	font-size: 57px;
+	font-weight: bold;
+}
+
+.header-content button {
+	position: absolute;
+	top: 650px;
+	right: 655px;
+	box-shadow: none !important;
+	width: 150px;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color: transparent;
+	color: #161616;
+}
+
+.smooth {
+	margin-top: 554px !important;
+}
+
+.header-content button:hover {
+	color: #ffffff !important;
+	background-color: transparent !important;
+}
+
+.header-content button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0 !important;
+	width: 100%;
+	height: 100%;
+	background: rgb(22, 22, 22);
+	z-index: -1;
+	transition: transform 0.5s;
+	transform-origin: 0 0;
+	transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.8)
+}
+
+.header-content button::before {
+	transform: scaleX(0);
+}
+
+.header-content button:hover::before {
+	transform: scaleX(1);
+}
+
+/* Contato */
+#contact {
+	margin-top: 7%;
+}
+
+.contato {
+	padding: 2%;
+	border:solid 1px #e9e6e6;
+	background-color: #f8f7f7;
+}
+
+label {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	color: #4d4b4b;
+}
+
+.contato h3 {
+	text-transform: uppercase;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 600;
+	color: #2a2a2a;
+}
+
+.contato form {
+	margin-left: 37%;
+}
+
+.contato input{
+	box-shadow: none !important;
+	width: 300px;
+	border-radius: 0 !important;
+}
+
+.contato textarea {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+}
+
+.contato button {
+	box-shadow: none !important;
+	width: 300px;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color: transparent;
+	color: #413f3f;
+}
+/* SOBRE*/
+.sobre-section {
+	margin-top: 10%;
+	border:solid 1px #e9e6e6;
+	padding: 2%;
+	background-color: #f8f7f7;
+}
+
+.sobre-section img {
+	width: 350px !important;
+	height: 260px;
+	border-radius: 60px;
+	border: solid 1px #ccc;
+}
+
+.sobre-section h3 {
+	text-transform: uppercase;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 600;
+
+}
+
+.sobre-section p {
+	width: 45%;
+	margin-left: 27%; 
+}
+
+
+/* CONTEUDO */
+#conteudo img {
+	width: 360px !important;
+}
+
+#conteudo h3 {
+	text-transform: uppercase;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.conteudo {
+	width: 80%;
+	margin-left: 9%;
+}
+/* Footer */
+footer {
+	background-image: linear-gradient(to bottom right, #161616, #050505);
+	padding: 4%;
+}
+
+footer a {
+	color: #a09e9e;
+	font-size: 15px;
+}
+
+footer h6 {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #eeecec;
+	font-weight: 600;
+}
+
+footer h3 {
+	text-transform: uppercase;
+	font-family: 'Inconsolata', monospace;
+	color: #f1ecec;
+	font-weight: 600;
+	border: solid 1px #413f3f;
+	width: 200px;
+	padding: 2%;
+}
+
+footer p {
+	color: #bdb9b9;
+}
+
+.fab {
+	color: #f8f5f5;
+}
+
+.sobre a:hover {
+	color: rgb(241, 239, 239);
+	border-bottom: dotted 1px #f8f5f5;
+	text-decoration: none;
+}
+
+footer input {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	color: #f8f5f5;
+	background-color: transparent !important;
+	border: none !important;
+	border: 1px solid #5a5858 !important;
+	width: 230px !important;
+}
+
+.footer {
+	border-bottom: solid 1px #5a5858;
+}
+
+footer button {
+	box-shadow: none !important;
+	width: 230px;
+	border-radius: 0 !important;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color: transparent !important;
+	border: 1px solid #5a5858 !important;
+}
+
+footer button:hover {
+	background-color: #b9b4b4 !important;
+	color: #141313 !important;
+	border: 1px solid #222121 !important;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+/* Media Queries */
+@media(min-width: 375px){
+
+	#landing-text {
+		font-size: 30px;
+		text-align: center;
+		margin-right: 85% !important;
+	}
+
+	.nav {
+		margin-left: 12%;
+	}
+
+	.header-content button {
+		position: absolute;
+		top: 6px;
+		right: 120px;
+	}
+
+	.sobre-section p {
+		width: 80%;
+		margin-left: 10%; 
+	}
+
+	.contato form {
+		margin-left: 9%;
+	}
+}
+
+@media (min-width: 576px) {
+	.contato form {
+		margin-left: 22%;
+	}
+
+	.header-content button {
+		position: absolute;
+		top: 100px;
+		right: 220px;
+	}
+
+	.sobre-section p {
+		width: 65%;
+		margin-left: 17%; 
+	}
+
+	#landing-text {
+		font-size: 45px;
+		margin-right: 85% !important;
+	}
+
+	#conteudo {
+		margin-left: 15%;
+		margin-top: 25%;
+	}
+
+	#conteudo h3 {
+		margin-right: 14%;
+	}
+}
+
+@media (min-width: 768px) {
+	#conteudo {
+		margin-left: 0%;
+	}
+
+	#landing-text {
+		font-size: 45px;
+		margin-right: 15% !important;
+	}
+
+	.header-content button {
+		position: absolute;
+		top: 100px;
+		right: 330px;
+	}
+
+	.header-content img {
+		width: 80% !important;
+		margin-left: 10%;
+	}
+
+	.contato form {
+		margin-left: 28%;
+	}	
+}
+
+@media (min-width: 992px) {
+	.header-content img {
+		width: 60% !important;
+		margin-left: 10%;
+	}
+
+	.header-content button {
+		position: absolute;
+		top: 600px;
+		right: 420px;
+	}
+
+	#landing-text {
+		font-size: 45px;
+		margin-left: 30% !important;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.header-content button {
+		position: absolute;
+		top: 100px;
+		right: 660px;
+	}
+	.header-content img {
+		width: 60% !important;
+		margin-left: 25%;
+	}
+
+	.nav {
+		margin-left: 2%;
+	}
+
+	.contato form {
+		margin-left: 35%;
+	}
+	
+	.sobre-section p {
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	#conteudo {
+		margin-top: 3%;
+	}
+	#conteudo h3 {
+		margin-right: 0%;
+	}
+}
